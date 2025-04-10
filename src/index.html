@@ -1,0 +1,819 @@
+<!DOCTYPE ht ml>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Spatika</title>
+
+        <link rel="stylesheet" href="output.css">
+        <link rel="stylesheet" href="assets/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/aos.css">
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"> -->
+
+        <script defer src="assets/js/alpine.min.js"></script>
+    </head>
+
+    <body class="font-laila">
+
+        <!-- <header x-data="{ open: false }"
+            class="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-[#f9fafb] via-[#e0f2f1] to-[#f9fafb] shadow-md backdrop-blur-md">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-[80px] md:h-[100px]">
+
+                  
+                    <a href="#" class="flex-shrink-0 w-[160px] md:w-[200px]">
+                        <img src="assets/images/spatika_logo-removebg-preview.png" alt="logo"
+                            class="h-full object-contain" />
+                    </a>
+
+                  
+                    <nav class="hidden md:flex space-x-6 lg:space-x-10">
+                        <a href="#about"
+                            class="text-[18px] lg:text-[20px] font-semibold text-teal-700 hover:text-teal-900 hover:underline underline-offset-4 transition duration-700">
+                            About Us</a>
+                        <a href="#service"
+                            class="text-[18px] lg:text-[20px] font-semibold text-teal-700 hover:text-teal-900 hover:underline underline-offset-4 transition duration-700">
+                            Services</a>
+                        <a href="#clients"
+                            class="text-[18px] lg:text-[20px] font-semibold text-teal-700 hover:text-teal-900 hover:underline underline-offset-4 transition duration-700">
+                            Clients</a>
+                        <a href="#whyus"
+                            class="text-[18px] lg:text-[20px] font-semibold text-teal-700 hover:text-teal-900 hover:underline underline-offset-4 transition duration-700">
+                            Why Us</a>
+                        <a href="#contact"
+                            class="text-[18px] lg:text-[20px] font-semibold text-teal-700 hover:text-teal-900 hover:underline underline-offset-4 transition duration-700">
+                            Contact Us</a>
+                    </nav>
+
+                   
+                    <button @click="open = !open" class="text-gray-800 md:hidden focus:outline-none">
+                        <i class="fa fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+           
+            <nav x-show="open" x-transition @click.away="open = false"
+                class="md:hidden bg-gradient-to-b from-teal-100 via-white to-teal-50 w-full flex flex-col z-40 shadow-lg">
+                <a @click="open = false" href="#about"
+                    class="text-teal-900 text-lg text-center py-3 border-b border-teal-200 hover:bg-white hover:text-emerald-600 transition">
+                    About Us</a>
+                <a @click="open = false" href="#service"
+                    class="text-teal-900 text-lg text-center py-3 border-b border-teal-200 hover:bg-white hover:text-emerald-600 transition">
+                    Services</a>
+                <a @click="open = false" href="#clients"
+                    class="text-teal-900 text-lg text-center py-3 border-b border-teal-200 hover:bg-white hover:text-emerald-600 transition">
+                    Clients</a>
+                <a @click="open = false" href="#whyus"
+                    class="text-teal-900 text-lg text-center py-3 border-b border-teal-200 hover:bg-white hover:text-emerald-600 transition">
+                    Why Us</a>
+                <a @click="open = false" href="#contact"
+                    class="text-teal-900 text-lg text-center py-3 border-b border-teal-200 hover:bg-white hover:text-emerald-600 transition">
+                    Contact Us</a>
+            </nav>
+        </header> -->
+
+
+        <header x-data="{ open: false }" class="fixed z-50 w-full bg-white/70 backdrop-blur shadow-md">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-[80px] md:h-[100px]">
+
+                    <!-- Logo -->
+                    <a href="#" class="flex-shrink-0 w-[230px] md:w-[230px]">
+                        <img src="assets/images/spatika_logo-removebg-preview.png" alt="logo"
+                            class="h-full object-contain" />
+                    </a>
+
+                    <!-- Desktop Nav -->
+                    <nav class="hidden md:flex space-x-6 lg:space-x-10">
+                        <a href="#about"
+                            class="text-[18px] lg:text-[20px] font-semibold tracking-wide text-teal-800 hover:text-teal-900 hover:underline underline-offset-4 transition-all duration-300 ease-in-out">
+                            About Us</a>
+                        <a href="#service"
+                            class="text-[18px] lg:text-[20px] font-semibold tracking-wide text-teal-800 hover:text-teal-900 hover:underline underline-offset-4 transition-all duration-300 ease-in-out">
+                            Services</a>
+                        <a href="#clients"
+                            class="text-[18px] lg:text-[20px] font-semibold tracking-wide text-teal-800 hover:text-teal-900 hover:underline underline-offset-4 transition-all duration-300 ease-in-out">
+                            Clients</a>
+                        <a href="#whyus"
+                            class="text-[18px] lg:text-[20px] font-semibold tracking-wide text-teal-800 hover:text-teal-900 hover:underline underline-offset-4 transition-all duration-300 ease-in-out">
+                            Why Us</a>
+                        <a href="#contact"
+                            class="text-[18px] lg:text-[20px] font-semibold tracking-wide text-teal-800 hover:text-teal-900 hover:underline underline-offset-4 transition-all duration-300 ease-in-out">
+                            Contact Us</a>
+                    </nav>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button @click="open = !open"
+                        class="text-gray-800 md:hidden focus:outline-none transition-transform duration-300">
+                        <i class="fa fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Nav -->
+            <nav x-show="open" x-transition:enter="transition ease-out duration-300"
+                x-transition:leave="transition ease-in duration-200" @click.away="open = false"
+                class="md:hidden bg-gradient-to-r from-emerald-700 to-teal-600 w-full flex flex-col z-40 shadow-md">
+                <a @click="open = false" href="#about"
+                    class="text-white text-lg font-semibold tracking-wide text-center py-4 border-b border-emerald-600 hover:bg-white hover:text-emerald-700 transition-all duration-300">
+                    About Us</a>
+                <a @click="open = false" href="#service"
+                    class="text-white text-lg font-semibold tracking-wide text-center py-4 border-b border-emerald-600 hover:bg-white hover:text-emerald-700 transition-all duration-300">
+                    Services</a>
+                <a @click="open = false" href="#clients"
+                    class="text-white text-lg font-semibold tracking-wide text-center py-4 border-b border-emerald-600 hover:bg-white hover:text-emerald-700 transition-all duration-300">
+                    Clients</a>
+                <a @click="open = false" href="#whyus"
+                    class="text-white text-lg font-semibold tracking-wide text-center py-4 border-b border-emerald-600 hover:bg-white hover:text-emerald-700 transition-all duration-300">
+                    Why Us</a>
+                <a @click="open = false" href="#contact"
+                    class="text-white text-lg font-semibold tracking-wide text-center py-4 border-b border-emerald-600 hover:bg-white hover:text-emerald-700 transition-all duration-300">
+                    Contact Us</a>
+            </nav>
+        </header>
+
+
+        <!-- <header x-data="{ open: false }" class="fixed z-50 w-full flex top-0 h-[80px] md:h-[100px] bg-white shadow-md">
+            <div class="container mx-auto flex flex-row justify-between items-center p-2">
+                <a class="w-[185px]" href="#">
+                    <img src="assets/images/spatika_logo-removebg-preview.png" alt="logo">
+                </a>
+                <nav class="md:flex flex-row gap-3 hidden">
+                    <a href="#about"
+                        class="text-[17px] text-red-500 hover:scale-105 hover:text-red-600 hover:underline underline-offset-2 hover:transition">About
+                        Us</a>
+                    <a href="#service"
+                        class="text-[17px] text-red-500 hover:scale-105 hover:text-red-600 hover:underline underline-offset-2 hover:transition">Services</a>
+                    <a href="#clients"
+                        class="text-[17px] text-red-500 hover:scale-105 hover:text-red-600 hover:underline underline-offset-2 hover:transition">Clients</a>
+                    <a href="#whyus"
+                        class="text-[17px] text-red-500 hover:scale-105 hover:text-red-600 hover:underline underline-offset-2 hover:transition">Why
+                        Us</a>
+                    <a href="#contact"
+                        class="text-[17px] text-red-500 hover:scale-105 hover:text-red-600 hover:underline underline-offset-2 hover:transition">Contact
+                        Us</a>
+                </nav>
+                <button @click="open = !open" id="hamburger"
+                    class="text-black mr-2 md:hidden flex items-center cursor-pointer">
+                    <i class="fa fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <nav x-show="open" @click.away="open = false"
+                class="bg-teal-700 md:hidden fixed top-[80px] w-full flex flex-col justify-center items-center z-50">
+
+                <a @click="open = !open"
+                    class="border-t border-teal-600 w-full p-2 text-center text-white hover:bg-slate-100 hover:text-teal-800 transition"
+                    href="#about">About Us</a>
+
+                <a @click="open = !open"
+                    class="border-t border-teal-600 w-full p-2 text-center text-white hover:bg-slate-100 hover:text-teal-800 transition"
+                    href="#service">Services</a>
+
+                <a @click="open = !open"
+                    class="border-t border-teal-600 w-full p-2 text-center text-white hover:bg-slate-100 hover:text-teal-800 transition"
+                    href="#clients">Clients</a>
+
+                <a @click="open = !open"
+                    class="border-t border-teal-600 w-full p-2 text-center text-white hover:bg-slate-100 hover:text-teal-800 transition"
+                    href="#whyus">Why Us</a>
+
+                <a @click="open = !open"
+                    class="border-t border-teal-600 w-full p-2 text-center text-white hover:bg-slate-100 hover:text-teal-800 transition"
+                    href="#contact">Contact Us</a>
+            </nav>
+
+        </header> -->
+        <main class="">
+
+            <section id="home"
+                class="relative min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
+                style="background-image: url('assets/images/spatika_home_bg.jpg');">
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-br from-black/60  to-black/70"></div>
+
+                <!-- Content -->
+                <div class="relative z-10 max-w-5xl px-6 text-center text-white">
+                    <h1
+                        class="text-4xl leading-tight md:text-5xl lg:text-6xl font-extrabold md:leading-tight lg:leading-tight">
+                        <span class="text-white">Empowering</span> HR Solutions<br />
+                        with <span class="text-[#ff5d21]">Spatika</span>
+                    </h1>
+
+                    <p class="mt-6 text-lg md:text-xl text-white">
+                        We provide comprehensive, value-driven recruitment solutions and employee lifecycle management.
+                        Our team of HR
+                        professionals brings deep industry knowledge and hands-on expertise to every engagement.
+                    </p>
+
+                    <p class="mt-4 text-md md:text-lg text-white">
+                        By understanding your business, culture, and goals, we ensure the delivery of qualified,
+                        well-matched candidates who
+                        align with your long-term vision.
+                    </p>
+
+                    <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+                        <a href="#service"
+                            class="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition">
+                            Explore Services
+                        </a>
+                        <a href="#contact"
+                            class="bg-white/20 hover:bg-white/30 text-[#f5f5f5] font-semibold px-6 py-3 rounded-full border border-white/30 transition">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section id="home"
+                class="relative bg-cover bg-center bg-no-repeat min-h-screen md:h-screen flex items-center justify-center text-white"
+                style="background-image: url('assets/images/business-concept-with-team-close-up.jpg');">
+                
+                <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+            
+                
+                <div class="relative z-10 max-w-5xl px-6 text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+                        Building HR Excellence with <span class="text-indigo-400">Spatika</span>
+                    </h1>
+            
+                    <p class="text-lg md:text-xl text-gray-200 mb-6">
+                        Established in early 2021, we’ve led the way in value-added services across RPO phases and HR solutions.
+                        Backed by over a decade of HR and Admin expertise, we ensure the right talent meets the right time.
+                    </p>
+            
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="#service"
+                            class="bg-indigo-600 hover:bg-indigo-700 transition px-6 py-3 rounded-full text-white font-semibold shadow-lg">
+                            Explore Services
+                        </a>
+                        <a href="#contact"
+                            class="bg-white text-indigo-600 hover:bg-gray-100 transition px-6 py-3 rounded-full font-semibold shadow-lg">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+            </section> -->
+
+
+            <section id="about"
+                class="md:h-screen lg:pt-[100px] flex bg-gradient-to-br from-indigo-100 via-white to-indigo-200 py-16 px-6 md:px-16">
+                <div class="container mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
+
+
+                    <div class="md:w-1/2" data-aos="fade-up">
+                        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 leading-tight">
+                            Building HR Excellence with <span class="text-indigo-600">Spatika</span>
+                        </h1>
+
+                        <p class="text-gray-700 text-lg mt-4">
+                            Established in early 2021, we’ve led the way in value-added services across RPO phases and
+                            HR solutions.
+                            Our team—armed with over a decade of experience—connects businesses with the right talent at
+                            the right
+                            time.
+                        </p>
+
+                        <div class="flex gap-4 mt-6 items-center">
+                            <div class="text-indigo-600 text-2xl">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <p class="text-gray-700">
+                                Deep understanding of client’s culture, values, and goals ensures ideal candidate fit
+                                and smooth
+                                integration.
+                            </p>
+                        </div>
+
+                        <div class="flex gap-4 mt-4 items-center">
+                            <div class="text-indigo-600 text-2xl">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                            <p class="text-gray-700">
+                                We aim to be an industry benchmark in managing the entire employee lifecycle.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="md:w-1/2" data-aos="fade-left">
+                        <img src="assets/images/business-concept-with-team-close-up.jpg" alt="HR Collaboration"
+                            class="rounded-3xl shadow-2xl w-full max-h-[500px] object-cover">
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- <section id="about" class="scroll-mt-[80px]  md:h-screen px-5">
+                <div class="h-fit md:h-screen">
+                    <div
+                        class="container pt-[100px]  pb-10 md:pb-0 md:pt-[80px] m-auto flex flex-col md:flex-row gap-10  items-center justify-center h-full">
+                        <div class="w-full md:w-[40%] lg:w-1/3">
+                            <p class=" max-w-[700px] text-center m-auto"><span
+                                    class="text-red-500 text-[18px] font-bold">Established</span> in early 2021, we have
+                                been
+                                at
+                                the forefront
+                                of providing value-added Service to our Clients on their End to End RPO Phase & the
+                                Human
+                                Resource needs managing Employees Life Cycle, all our Staff & Core Management people are
+                                backed
+                                with Human Resource & Administration wing Experienced for more than decade in the
+                                domain,
+                                realizing the need between Clients & Business founded <span
+                                    class="text-red-500 text-[18px] font-bold">Spatika</span> to be the one of Benchmark
+                                phase
+                                in the industry. We make sure & focus on an in-depth understanding of our client’s
+                                Business,
+                                Culture, Values, and Goals while getting into their RPO Phase which help us in getting
+                                fulfillment of the Recruitment needs with the Right candidature at Right span.
+                            </p>
+                        </div>
+                        <div class="w-full md:w-[60%] lg:w-2/3 overflow-hidden rounded-2xl">
+                            <img class="w-6xl hover:scale-110 transition duration-150 cursor-pointer"
+                                src="assets/images/business-concept-with-team-close-up.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+            </section> -->
+
+            <section id="service" class=" px-5 scroll-mt-[80px] bg-[#f5f5f5]">
+                <div class="container mx-auto text-center">
+                    <h2 class="text-4xl font-bold text-gray-900 pt-12">Our Services</h2>
+                    <div class="flex flex-wrap justify-center gap-8 py-12">
+                        <!-- Card 1 - Manpower Suppliers -->
+                        <div data-aos="fade-up"
+                            class="bg-white rounded-lg shadow-lg overflow-hidden w-full sm:w-[45%] lg:w-[30%] service-card"
+                            x-data="{ open: false }">
+                            <div class="p-6">
+                                <h3 class="text-2xl font-semibold text-gray-800">Manpower Suppliers</h3>
+                                <img src="assets/images/man_power_supply.jpeg" alt="Man Power"
+                                    class="p-4 object-cover w-full aspect-[3/2] h-auto rounded-[30px]">
+                                <p class="text-gray-600">In order to fulfill the varied demands of our valuable clients,
+                                    we
+                                    offer reliable manpower planning services.</p>
+
+                                <div x-show="open" class="text-gray-600">
+                                    <p>Our manpower solutions are customized based on the client's specific needs,
+                                        providing
+                                        skilled labor and workforce support for various industries. We specialize in
+                                        temporary and permanent staffing, ensuring seamless integration into your
+                                        business
+                                        processes and culture. Our recruitment approach is designed to reduce
+                                        time-to-hire
+                                        while maintaining quality and compliance.</p>
+                                </div>
+
+                                <button @click="open = !open"
+                                    class="text-blue-500 cursor-pointer hover:text-blue-700 font-semibold mt-2">
+                                    <span x-text="open ? 'Show Less' : 'Show More'"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 - Payroll Outsourcing Services -->
+                        <div data-aos="fade-up"
+                            class="bg-white rounded-lg shadow-lg overflow-hidden w-full sm:w-[45%] lg:w-[30%] service-card"
+                            x-data="{ open: false }">
+                            <div class="p-6">
+                                <h3 class="text-2xl font-semibold text-gray-800">Payroll Outsourcing Services</h3>
+                                <img src="assets/images/payroll.jpg" alt="Payroll"
+                                    class="p-4 w-full object-cover aspect-[3/2] h-auto rounded-[30px]">
+                                <p class="text-gray-600">Our expertise lies in providing proficient payroll outsourcing
+                                    services for the employees of our clients.</p>
+
+                                <div x-show="open" class="text-gray-600">
+                                    <p>We offer a complete range of payroll outsourcing services that include
+                                        calculating
+                                        wages, handling statutory compliance, managing benefits, and more. Our team
+                                        ensures
+                                        accuracy and timely payments while reducing your administrative burden. We
+                                        utilize
+                                        the latest payroll software to streamline processes and guarantee compliance
+                                        with
+                                        local laws and regulations.</p>
+                                </div>
+
+                                <button @click="open = !open"
+                                    class="text-blue-500 cursor-pointer hover:text-blue-700 font-semibold mt-2">
+                                    <span x-text="open ? 'Show Less' : 'Show More'"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 - Consultation -->
+                        <div data-aos="fade-up"
+                            class="bg-white rounded-lg shadow-lg overflow-hidden w-full sm:w-[45%] lg:w-[30%] service-card"
+                            x-data="{ open: false }">
+                            <div class="p-6">
+                                <h3 class="text-2xl font-semibold text-gray-800">Consultation</h3>
+                                <img src="assets/images/consultation1.jpg" alt="Consultation"
+                                    class="p-4 w-full object-cover aspect-[3/2] h-auto rounded-[30px]">
+                                <p class="text-gray-600">Owing to our huge industrial knowledge and rich information, we
+                                    are offering our customers with the best consultancy services.</p>
+
+                                <div x-show="open" class="text-gray-600">
+                                    <p>We provide expert HR consulting that helps businesses improve employee
+                                        performance,
+                                        resolve organizational challenges, and develop effective HR strategies. Whether
+                                        you're facing difficulties with employee relations, talent management, or
+                                        compliance, we offer tailored solutions designed to meet the unique needs of
+                                        your
+                                        organization.</p>
+                                </div>
+
+                                <button @click="open = !open"
+                                    class="text-blue-500 cursor-pointer hover:text-blue-700 font-semibold mt-2">
+                                    <span x-text="open ? 'Show Less' : 'Show More'"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 - Installation -->
+                        <div data-aos="fade-up"
+                            class="bg-white rounded-lg shadow-lg overflow-hidden w-full sm:w-[45%] lg:w-[30%] service-card"
+                            x-data="{ open: false }">
+                            <div class="p-6">
+                                <h3 class="text-2xl font-semibold text-gray-800">Installation</h3>
+                                <img src="assets/images/installation.jpg" alt="Installation"
+                                    class="p-4 w-full object-cover aspect-[3/2] h-auto rounded-[30px]">
+                                <p class="text-gray-600">To meet the growing requirement of our precious consumers, our
+                                    firm offers Installation Services.</p>
+
+                                <div x-show="open" class="text-gray-600">
+                                    <p>We provide end-to-end installation services for a wide range of equipment and
+                                        technologies, ensuring smooth setup and configuration. Our skilled technicians
+                                        handle the complete process from site assessment to installation, making sure
+                                        everything is in place for efficient usage. We also offer post-installation
+                                        support
+                                        and training for your team.</p>
+                                </div>
+
+                                <button @click="open = !open"
+                                    class="text-blue-500 cursor-pointer hover:text-blue-700 font-semibold mt-2">
+                                    <span x-text="open ? 'Show Less' : 'Show More'"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 - Delivery -->
+                        <div data-aos="fade-up"
+                            class="bg-white rounded-lg shadow-lg overflow-hidden w-full sm:w-[45%] lg:w-[30%] service-card"
+                            x-data="{ open: false }">
+                            <div class="p-6">
+                                <h3 class="text-2xl font-semibold text-gray-800">Delivery</h3>
+                                <img src="assets/images/delivery.jpg" alt="Delivery"
+                                    class="p-4 w-full object-cover aspect-[3/2] h-auto rounded-[30px]">
+                                <p class="text-gray-600">We hold expertise in providing doorstep delivery of the
+                                    services
+                                    to our customers.</p>
+
+                                <div x-show="open" class="text-gray-600">
+                                    <p>Our delivery services ensure that products, services, or resources reach your
+                                        doorstep on time and in optimal condition. We utilize an extensive network of
+                                        local
+                                        and global logistics providers to meet your delivery needs. Whether it's a
+                                        product
+                                        or a service, we make sure it arrives at the right place and time, ensuring
+                                        complete
+                                        customer satisfaction.</p>
+                                </div>
+
+                                <button @click="open = !open"
+                                    class="text-blue-500 cursor-pointer hover:text-blue-700 font-semibold mt-2">
+                                    <span x-text="open ? 'Show Less' : 'Show More'"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 - AMC -->
+                        <div data-aos="fade-up"
+                            class="bg-white rounded-lg shadow-lg overflow-hidden w-full sm:w-[45%] lg:w-[30%] service-card"
+                            x-data="{ open: false }">
+                            <div class="p-6">
+                                <h3 class="text-2xl font-semibold text-gray-800">AMC</h3>
+                                <img src="assets/images/AMC.png" alt="AMC"
+                                    class="p-4 w-full object-cover aspect-[3/2] h-auto rounded-[30px]">
+                                <p class="text-gray-600">We are proficient to render all types of AMC Service.</p>
+
+                                <div x-show="open" class="text-gray-600">
+                                    <p>Our Annual Maintenance Contract (AMC) services provide regular maintenance and
+                                        support for your equipment and systems. We offer comprehensive AMC packages,
+                                        covering all types of machinery, ensuring their optimal performance and
+                                        longevity.
+                                        With our skilled technicians, you get timely servicing and issue resolution,
+                                        preventing costly repairs and downtime.</p>
+                                </div>
+
+                                <button @click="open = !open"
+                                    class="text-blue-500 cursor-pointer hover:text-blue-700 font-semibold mt-2">
+                                    <span x-text="open ? 'Show Less' : 'Show More'"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="clients" class="scroll-mt-[80px] bg-white">
+                <h1 class="text-4xl font-bold text-gray-900 pt-12 text-center">Clients</h1>
+
+                <div class="container mx-auto px-4 py-16">
+                    <div class="owl-carousel owl-theme">
+                        <!-- Slide 1 -->
+                        <div class="item bg-[#f5f5f5] p-6 rounded-lg shadow-md flex flex-col items-center">
+                            <h2 class="text-xl font-semibold text-center text-gray-800 mb-4">Udaan</h2>
+                            <img src="assets/images/Udaan_logo.png" alt="Image 1"
+                                class="max-w-full aspect-square h-auto rounded-lg">
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="item bg-[#f5f5f5] p-6 rounded-lg shadow-md flex flex-col items-center">
+                            <h2 class="text-xl font-semibold text-center text-gray-800 mb-4">Zomato</h2>
+                            <img src="assets/images/Zomato_logo.png" alt="Image 2"
+                                class="max-w-full aspect-square h-auto rounded-lg">
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="item bg-[#f5f5f5] p-6 rounded-lg shadow-md flex flex-col items-center">
+                            <h2 class="text-xl font-semibold text-center text-gray-800 mb-4">McDonald's</h2>
+                            <img src="assets/images/MCdonalds_logo.png" alt="Image 3"
+                                class="max-w-full aspect-square h-auto rounded-lg">
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="item bg-[#f5f5f5] p-6 rounded-lg shadow-md flex flex-col items-center">
+                            <h2 class="text-xl font-semibold text-center text-gray-800 mb-4">XPressBees</h2>
+                            <img src="assets/images/Xpressbees_logo.png" alt="Image 4"
+                                class="max-w-full aspect-square h-auto rounded-lg">
+                        </div>
+
+                        <!-- Slide 5 -->
+                        <div class="item bg-[#f5f5f5] p-6 rounded-lg shadow-md flex flex-col items-center">
+                            <h2 class="text-xl font-semibold text-center text-gray-800 mb-4">BigBasket</h2>
+                            <img src="assets/images/Biggbasket_logo.png" alt="Image 5"
+                                class="max-w-full aspect-square h-auto rounded-lg">
+                        </div>
+
+                        <!-- Slide 6 -->
+                        <div class="item bg-[#f5f5f5] p-6 rounded-lg shadow-md flex flex-col items-center">
+                            <h2 class="text-xl font-semibold text-center text-gray-800 mb-4">Swiggy</h2>
+                            <img src="assets/images/Swiggy_logo_with_white_circle.png" alt="Image 5"
+                                class="max-w-full aspect-square h-auto rounded-lg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="whyus" class="px-5 scroll-mt-[80px] bg-[#f5f5f5]">
+
+                <div class="container mx-auto text-center">
+                    <div class="text-center pt-12">
+                        <h2 class="text-4xl font-bold text-gray-800">Why Choose Us?</h2>
+                        <p class="text-xl pt-4 text-gray-600">We stand out because we are committed to your success.
+                            Here's
+                            why:</p>
+                    </div>
+
+                    <div class="flex flex-wrap justify-center gap-8 py-16">
+                        <!-- Why Us Item 1 -->
+                        <div data-aos="fade-up"
+                            class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 w-full sm:w-72 text-center">
+                            <div class="text-4xl text-blue-600 mb-4">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-gray-800">Exceptional Staff</h3>
+                            <p class="text-gray-600 mt-4">Our team consists of highly skilled and experienced
+                                professionals
+                                dedicated to providing the best HR solutions tailored to your needs.</p>
+                        </div>
+
+                        <!-- Why Us Item 2 -->
+                        <div data-aos="fade-up"
+                            class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 w-full sm:w-72 text-center">
+                            <div class="text-4xl text-blue-600 mb-4">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-gray-800">Premium Quality</h3>
+                            <p class="text-gray-600 mt-4">We maintain the highest standards in all our services,
+                                ensuring
+                                the
+                                best outcomes for your organization.</p>
+                        </div>
+
+                        <!-- Why Us Item 3 -->
+                        <div data-aos="fade-up"
+                            class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 w-full sm:w-72 text-center">
+                            <div class="text-4xl text-blue-600 mb-4">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-gray-800">Affordable Pricing</h3>
+                            <p class="text-gray-600 mt-4">We offer cost-effective solutions that fit within your budget
+                                while
+                                delivering excellent value for your investment.</p>
+                        </div>
+
+                        <!-- Why Us Item 4 -->
+                        <div data-aos="fade-up"
+                            class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 w-full sm:w-72 text-center">
+                            <div class="text-4xl text-blue-600 mb-4">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-gray-800">High Industry Standards</h3>
+                            <p class="text-gray-600 mt-4">Our services comply with the highest industry standards and
+                                best
+                                practices, ensuring the success and growth of your business.</p>
+                        </div>
+
+                        <!-- Why Us Item 5 -->
+                        <div data-aos="fade-up"
+                            class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 w-full sm:w-72 text-center">
+                            <div class="text-4xl text-blue-600 mb-4">
+                                <i class="fas fa-people-carry"></i>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-gray-800">Tailored Solutions</h3>
+                            <p class="text-gray-600 mt-4">We customize our HR strategies to match the unique
+                                requirements
+                                of
+                                your business, ensuring effective and long-term results.</p>
+                        </div>
+
+                        <!-- Why Us Item 6 -->
+                        <div data-aos="fade-up"
+                            class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 w-full sm:w-72 text-center">
+                            <div class="text-4xl text-blue-600 mb-4">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-gray-800">Proven Track Record</h3>
+                            <p class="text-gray-600 mt-4">We have a strong history of successful HR transformations that
+                                drive
+                                business growth, enhanced employee performance, and satisfaction.</p>
+                        </div>
+
+                        <!-- Why Us Item 7 -->
+                        <div data-aos="fade-up"
+                            class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 w-full sm:w-72 text-center">
+                            <div class="text-4xl text-blue-600 mb-4">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-gray-800">Continuous Improvement</h3>
+                            <p class="text-gray-600 mt-4">We are committed to continuously improving our services,
+                                adapting
+                                to
+                                new trends, and offering innovative HR solutions that keep your business ahead of the
+                                curve.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                class="scroll-mt-[80px] bg-gradient-to-r from-emerald-500 to-[#e94e88] flex flex-col items-center justify-center p-10">
+                <div class="max-w-5xl w-full pb-5">
+                    <div class="text-center mb-10">
+                        <h1 class="text-4xl font-extrabold text-white">Spatika HR Solutions</h1>
+                        <p class="mt-4 text-lg text-gray-100 max-w-2xl mx-auto">
+                            Empowering businesses with top-tier human resource solutions and creating opportunities that
+                            bring socio-economic change.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap justify-center gap-6">
+                        <!-- Card 1 -->
+                        <div
+                            class="bg-white shadow-lg rounded-xl p-6 text-center transition transform hover:scale-105 duration-300 flex-1 min-w-[280px] max-w-[350px]">
+                            <h2 class="text-2xl font-bold text-emerald-600">Our Vision</h2>
+                            <p class="mt-3 text-gray-700">
+                                To be among the best HR organizations, providing top-notch recruitment solutions and
+                                workforce strategies.
+                            </p>
+                            <div class="mt-4">
+                                <span
+                                    class="inline-block bg-emerald-500 text-white px-4 py-1 rounded-full text-sm">Excellence</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div
+                            class="bg-white shadow-lg rounded-xl p-6 text-center transition transform hover:scale-105 duration-300 flex-1 min-w-[280px] max-w-[350px]">
+                            <h2 class="text-2xl font-bold text-teal-500">Our Mission</h2>
+                            <p class="mt-3 text-gray-700">
+                                Creating employment for a million people and transforming lives by connecting talent
+                                with
+                                the right opportunities.
+                            </p>
+                            <div class="mt-4">
+                                <span
+                                    class="inline-block bg-teal-500 text-white px-4 py-1 rounded-full text-sm">Impact</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div
+                            class="bg-white shadow-lg rounded-xl p-6 text-center transition transform hover:scale-105 duration-300 flex-1 min-w-[280px] max-w-[350px]">
+                            <h2 class="text-2xl font-bold text-orange-500">Our Values</h2>
+                            <p class="mt-3 text-gray-700">
+                                Integrity, innovation, and inclusivity drive our approach to creating sustainable
+                                employment
+                                solutions.
+                            </p>
+                            <div class="mt-4">
+                                <span
+                                    class="inline-block bg-orange-500 text-white px-4 py-1 rounded-full text-sm">Trust</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer id="contact" class="bg-gray-100 pt-16">
+
+            <div class="max-w-6xl mx-auto px-6 relative">
+                <div class="flex flex-wrap justify-between gap-8 text-center">
+                    <!-- Address Section -->
+                    <div class="flex-1 min-w-[280px]">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-3"><i
+                                class="fas fa-map-marker-alt text-emerald-500"></i> Address</h2>
+                        <p class="text-gray-600">Spatika HR Solutions</p>
+                        <p class="text-gray-600">123 Business Street</p>
+                        <p class="text-gray-600">City, State - 123456</p>
+                    </div>
+
+                    <!-- Contact Section -->
+                    <div class="flex-1 min-w-[280px]">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-3"> Contact Us</h2>
+                        <p class="text-gray-600"><i class="fas fa-envelope text-emerald-400"></i>
+                            <a href="mailto:hrbp@spatikahr.com" class="hover:text-emerald-500">hrbp@spatikahr.com</a>
+                        </p>
+                        <p class="text-gray-600"><i class="fas fa-phone text-emerald-400"></i>
+                            <a href="tel:+917892813118" class="hover:text-emerald-500">+91 78928 13118</a>
+                        </p>
+                        <p class="text-gray-600"><i class="fas fa-globe text-emerald-400"></i>
+                            <a href="#" class="hover:text-emerald-500">www.spatikahr.com</a>
+                        </p>
+                    </div>
+
+                    <!-- Timings Section -->
+                    <div class="flex-1 min-w-[280px]">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-3"><i
+                                class="fas fa-clock text-emerald-500"></i>
+                            Timings</h2>
+                        <p class="text-gray-600">Monday - Saturday: 9 AM - 6 PM</p>
+                        <p class="text-gray-600">Sunday: Closed</p>
+                    </div>
+                </div>
+
+                <hr class="my-6 border-gray-300">
+
+                <!-- Social Media & Bottom Section -->
+                <div class="flex justify-center space-x-6 text-gray-600 text-lg">
+                    <a href="#" class="hover:text-emerald-500"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="hover:text-emerald-500"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-emerald-500"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-emerald-500"><i class="fab fa-instagram"></i></a>
+                </div>
+
+                <p class="text-center text-gray-500 text-sm py-4">
+                    &copy; 2021 Spatika HR Solutions Pvt Ltd. All rights reserved.
+                </p>
+            </div>
+        </footer>
+
+        <!-- Scroll to Top Button -->
+        <button id="scrollToTopBtn"
+            class="hidden fixed z-10 bottom-20 right-5 bg-blue-600 text-white h-12 w-12 flex items-center justify-center rounded-full shadow-md hover:bg-blue-700 transition-all">
+            <i class="fas fa-arrow-up text-xl"></i>
+        </button>
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/917892813118" target="_blank"
+            class="fixed z-10 bottom-5 right-5 bg-green-500 text-white h-12 w-12 flex items-center justify-center rounded-full shadow-md hover:bg-green-600 transition-all">
+            <i class="fab fa-whatsapp text-xl"></i>
+        </a>
+
+
+
+
+        <script src="assets/js/aos.js"></script>
+
+    </body>
+
+</html>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/index.js"></script>
