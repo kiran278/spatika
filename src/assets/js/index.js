@@ -23,6 +23,17 @@ $(".owl-carousel").owlCarousel({
 });
 
 
+//page loader
+window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    loader.classList.add("opacity-0");
+    setTimeout(() => {
+        loader.style.display = "none";
+    }, 500);
+});
+
+
+//animation
 AOS.init({
     duration: 1000, // optional: animation duration in ms
     once: true      // ✅ ensures the animation happens only once

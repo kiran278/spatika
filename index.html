@@ -1,4 +1,4 @@
-<!DOCTYPE ht ml>
+<!DOCTYPE html>
 <html>
 
     <head>
@@ -20,74 +20,24 @@
         <script defer src="src/assets/js/alpine.min.js"></script>
     </head>
 
-    <body class="font-laila">
+    <!-- Page Loader -->
+    <div id="loader"
+        class="fixed inset-0 bg-white flex items-center justify-center z-[9999] transition-opacity duration-500">
+        <div
+            class="w-16 h-16 border-4 border-t-teal-500 border-b-orange-500 border-l-transparent border-r-transparent rounded-full animate-spin">
+        </div>
+    </div>
 
-        <!-- <header x-data="{ open: false }"
-            class="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-[#f9fafb] via-[#e0f2f1] to-[#f9fafb] shadow-md backdrop-blur-md">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-center h-[80px] md:h-[100px]">
-
-                  
-                    <a href="#" class="flex-shrink-0 w-[160px] md:w-[200px]">
-                        <img src="assets/images/spatika_logo-removebg-preview.png" alt="logo"
-                            class="h-full object-contain" />
-                    </a>
-
-                  
-                    <nav class="hidden md:flex space-x-6 lg:space-x-10">
-                        <a href="#about"
-                            class="text-[18px] lg:text-[20px] font-semibold text-teal-700 hover:text-teal-900 hover:underline underline-offset-4 transition duration-700">
-                            About Us</a>
-                        <a href="#service"
-                            class="text-[18px] lg:text-[20px] font-semibold text-teal-700 hover:text-teal-900 hover:underline underline-offset-4 transition duration-700">
-                            Services</a>
-                        <a href="#clients"
-                            class="text-[18px] lg:text-[20px] font-semibold text-teal-700 hover:text-teal-900 hover:underline underline-offset-4 transition duration-700">
-                            Clients</a>
-                        <a href="#whyus"
-                            class="text-[18px] lg:text-[20px] font-semibold text-teal-700 hover:text-teal-900 hover:underline underline-offset-4 transition duration-700">
-                            Why Us</a>
-                        <a href="#contact"
-                            class="text-[18px] lg:text-[20px] font-semibold text-teal-700 hover:text-teal-900 hover:underline underline-offset-4 transition duration-700">
-                            Contact Us</a>
-                    </nav>
-
-                   
-                    <button @click="open = !open" class="text-gray-800 md:hidden focus:outline-none">
-                        <i class="fa fa-bars text-2xl"></i>
-                    </button>
-                </div>
-            </div>
-
-           
-            <nav x-show="open" x-transition @click.away="open = false"
-                class="md:hidden bg-gradient-to-b from-teal-100 via-white to-teal-50 w-full flex flex-col z-40 shadow-lg">
-                <a @click="open = false" href="#about"
-                    class="text-teal-900 text-lg text-center py-3 border-b border-teal-200 hover:bg-white hover:text-emerald-600 transition">
-                    About Us</a>
-                <a @click="open = false" href="#service"
-                    class="text-teal-900 text-lg text-center py-3 border-b border-teal-200 hover:bg-white hover:text-emerald-600 transition">
-                    Services</a>
-                <a @click="open = false" href="#clients"
-                    class="text-teal-900 text-lg text-center py-3 border-b border-teal-200 hover:bg-white hover:text-emerald-600 transition">
-                    Clients</a>
-                <a @click="open = false" href="#whyus"
-                    class="text-teal-900 text-lg text-center py-3 border-b border-teal-200 hover:bg-white hover:text-emerald-600 transition">
-                    Why Us</a>
-                <a @click="open = false" href="#contact"
-                    class="text-teal-900 text-lg text-center py-3 border-b border-teal-200 hover:bg-white hover:text-emerald-600 transition">
-                    Contact Us</a>
-            </nav>
-        </header> -->
-
+    <body class="font-laila"
+        style="font-family: 'Laila', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;">
 
         <header x-data="{ open: false }" class="fixed z-50 w-full bg-white/70 backdrop-blur shadow-md">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-[80px] lg:h-[90px]">
 
                     <!-- Logo -->
-                    <a href="#" class="flex-shrink-0 w-[230px] md:w-[230px]">
-                        <img src="src/assets/images/spatika_logo.png" alt="logo" class="h-full object-contain" />
+                    <a href="#" class="flex-shrink-0 w-[200px] md:w-[225px]">
+                        <img src="src/assets/images/spatika_logo_2.png" alt="logo" class="h-full object-contain" />
                     </a>
 
                     <!-- Desktop Nav -->
@@ -139,63 +89,11 @@
             </nav>
         </header>
 
-
-        <!-- <header x-data="{ open: false }" class="fixed z-50 w-full flex top-0 h-[80px] md:h-[100px] bg-white shadow-md">
-            <div class="container mx-auto flex flex-row justify-between items-center p-2">
-                <a class="w-[185px]" href="#">
-                    <img src="assets/images/spatika_logo-removebg-preview.png" alt="logo">
-                </a>
-                <nav class="md:flex flex-row gap-3 hidden">
-                    <a href="#about"
-                        class="text-[17px] text-red-500 hover:scale-105 hover:text-red-600 hover:underline underline-offset-2 hover:transition">About
-                        Us</a>
-                    <a href="#service"
-                        class="text-[17px] text-red-500 hover:scale-105 hover:text-red-600 hover:underline underline-offset-2 hover:transition">Services</a>
-                    <a href="#clients"
-                        class="text-[17px] text-red-500 hover:scale-105 hover:text-red-600 hover:underline underline-offset-2 hover:transition">Clients</a>
-                    <a href="#whyus"
-                        class="text-[17px] text-red-500 hover:scale-105 hover:text-red-600 hover:underline underline-offset-2 hover:transition">Why
-                        Us</a>
-                    <a href="#contact"
-                        class="text-[17px] text-red-500 hover:scale-105 hover:text-red-600 hover:underline underline-offset-2 hover:transition">Contact
-                        Us</a>
-                </nav>
-                <button @click="open = !open" id="hamburger"
-                    class="text-black mr-2 md:hidden flex items-center cursor-pointer">
-                    <i class="fa fa-bars text-2xl"></i>
-                </button>
-            </div>
-
-            <nav x-show="open" @click.away="open = false"
-                class="bg-teal-700 md:hidden fixed top-[80px] w-full flex flex-col justify-center items-center z-50">
-
-                <a @click="open = !open"
-                    class="border-t border-teal-600 w-full p-2 text-center text-white hover:bg-slate-100 hover:text-teal-800 transition"
-                    href="#about">About Us</a>
-
-                <a @click="open = !open"
-                    class="border-t border-teal-600 w-full p-2 text-center text-white hover:bg-slate-100 hover:text-teal-800 transition"
-                    href="#service">Services</a>
-
-                <a @click="open = !open"
-                    class="border-t border-teal-600 w-full p-2 text-center text-white hover:bg-slate-100 hover:text-teal-800 transition"
-                    href="#clients">Clients</a>
-
-                <a @click="open = !open"
-                    class="border-t border-teal-600 w-full p-2 text-center text-white hover:bg-slate-100 hover:text-teal-800 transition"
-                    href="#whyus">Why Us</a>
-
-                <a @click="open = !open"
-                    class="border-t border-teal-600 w-full p-2 text-center text-white hover:bg-slate-100 hover:text-teal-800 transition"
-                    href="#contact">Contact Us</a>
-            </nav>
-
-        </header> -->
         <main class="">
 
             <section id="home"
                 class="relative min-h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
-                style="background-image: url('src/assets/images/spatika_home_bg.jpg');">
+                style="background-image: url('src/assets/images/spatika_home_bg_1.jpg');">
                 <!-- Overlay -->
                 <div class="absolute inset-0 bg-gradient-to-br from-black/60  to-black/70"></div>
 
@@ -231,37 +129,6 @@
                     </div>
                 </div>
             </section>
-
-            <!-- <section id="home"
-                class="relative bg-cover bg-center bg-no-repeat min-h-screen md:h-screen flex items-center justify-center text-white"
-                style="background-image: url('src/assets/images/business-concept-with-team-close-up.jpg');">
-                
-                <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-            
-                
-                <div class="relative z-10 max-w-5xl px-6 text-center md:text-left">
-                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
-                        Building HR Excellence with <span class="text-indigo-400">Spatika</span>
-                    </h1>
-            
-                    <p class="text-lg md:text-xl text-gray-200 mb-6">
-                        Established in early 2021, we’ve led the way in value-added services across RPO phases and HR solutions.
-                        Backed by over a decade of HR and Admin expertise, we ensure the right talent meets the right time.
-                    </p>
-            
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                        <a href="#service"
-                            class="bg-indigo-600 hover:bg-indigo-700 transition px-6 py-3 rounded-full text-white font-semibold shadow-lg">
-                            Explore Services
-                        </a>
-                        <a href="#contact"
-                            class="bg-white text-indigo-600 hover:bg-gray-100 transition px-6 py-3 rounded-full font-semibold shadow-lg">
-                            Contact Us
-                        </a>
-                    </div>
-                </div>
-            </section> -->
-
 
             <section id="about"
                 class="md:h-fit md:min-h-screen lg:pt-[100px]  scroll-mt-[80px] md:scroll-mt-[20px] flex bg-gradient-to-br from-indigo-100 via-white to-indigo-200 py-16 px-6 md:px-16">
@@ -304,47 +171,12 @@
 
 
                     <div class="md:w-1/2" data-aos="fade-up">
-                        <img src="src/assets/images/business-concept-with-team-close-up.jpg" alt="HR Collaboration"
+                        <img src="src/assets/images/business-concept_1.jpg" alt="HR Collaboration"
                             class="rounded-3xl shadow-2xl w-full max-h-[500px] object-cover">
                     </div>
 
                 </div>
             </section>
-
-            <!-- <section id="about" class="scroll-mt-[80px]  md:h-screen px-5">
-                <div class="h-fit md:h-screen">
-                    <div
-                        class="container pt-[100px]  pb-10 md:pb-0 md:pt-[80px] m-auto flex flex-col md:flex-row gap-10  items-center justify-center h-full">
-                        <div class="w-full md:w-[40%] lg:w-1/3">
-                            <p class=" max-w-[700px] text-center m-auto"><span
-                                    class="text-red-500 text-[18px] font-bold">Established</span> in early 2021, we have
-                                been
-                                at
-                                the forefront
-                                of providing value-added Service to our Clients on their End to End RPO Phase & the
-                                Human
-                                Resource needs managing Employees Life Cycle, all our Staff & Core Management people are
-                                backed
-                                with Human Resource & Administration wing Experienced for more than decade in the
-                                domain,
-                                realizing the need between Clients & Business founded <span
-                                    class="text-red-500 text-[18px] font-bold">Spatika</span> to be the one of Benchmark
-                                phase
-                                in the industry. We make sure & focus on an in-depth understanding of our client’s
-                                Business,
-                                Culture, Values, and Goals while getting into their RPO Phase which help us in getting
-                                fulfillment of the Recruitment needs with the Right candidature at Right span.
-                            </p>
-                        </div>
-                        <div class="w-full md:w-[60%] lg:w-2/3 overflow-hidden rounded-2xl">
-                            <img class="w-6xl hover:scale-110 transition duration-150 cursor-pointer"
-                                src="assets/images/business-concept-with-team-close-up.jpg" alt="">
-                        </div>
-
-                    </div>
-                </div>
-
-            </section> -->
 
             <section id="service" class=" px-5 scroll-mt-[80px] md:scroll-mt-[90px] bg-[#f5f5f5]">
                 <div class="container mx-auto text-center max-w-[1000px]">
@@ -356,7 +188,7 @@
                             x-data="{ open: false }">
                             <div class="p-6">
                                 <h3 class="text-2xl font-semibold text-gray-800">Manpower Suppliers</h3>
-                                <img src="src/assets/images/man_power_supply.jpeg" alt="Man Power"
+                                <img src="src/assets/images/man_power_supply_1.jpeg" alt="Man Power"
                                     class="p-4 object-cover w-full aspect-[3/2] h-auto rounded-[30px]">
                                 <p class="text-gray-600">In order to fulfill the varied demands of our valuable clients,
                                     we
@@ -416,7 +248,7 @@
                             x-data="{ open: false }">
                             <div class="p-6">
                                 <h3 class="text-2xl font-semibold text-gray-800">Consultation</h3>
-                                <img src="src/assets/images/consultation1.jpg" alt="Consultation"
+                                <img src="src/assets/images/consultation_1.jpg" alt="Consultation"
                                     class="p-4 w-full object-cover aspect-[3/2] h-auto rounded-[30px]">
                                 <p class="text-gray-600">Owing to our huge industrial knowledge and rich information, we
                                     are offering our customers with the best consultancy services.</p>
@@ -501,7 +333,7 @@
                             x-data="{ open: false }">
                             <div class="p-6">
                                 <h3 class="text-2xl font-semibold text-gray-800">AMC</h3>
-                                <img src="src/assets/images/AMC.png" alt="AMC"
+                                <img src="src/assets/images/AMC_1.png" alt="AMC"
                                     class="p-4 w-full object-cover aspect-[3/2] h-auto rounded-[30px]">
                                 <p class="text-gray-600">We are proficient to render all types of AMC Service.</p>
 
@@ -803,9 +635,6 @@
             class="fixed z-10 bottom-5 right-5 bg-green-500 text-white h-10 w-10 flex items-center justify-center rounded-full shadow-md hover:bg-green-600 transition-all">
             <i class="fab fa-whatsapp text-xl"></i>
         </a>
-
-
-
 
         <script src="src/assets/js/aos.js"></script>
 
