@@ -5,9 +5,11 @@ module.exports = {
     extend: {
       fontFamily: {
         laila: [ 'Laila', 'sans-serif' ],
+        averta: ['Averta', 'sans-serif'],
       },
     },
   },
   plugins: [],
+  
 }
 
