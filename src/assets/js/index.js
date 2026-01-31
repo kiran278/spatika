@@ -57,3 +57,41 @@ scrollToTopBtn.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+//Contact Form 
+
+const form = document.getElementById("contactForm");
+const successMessage = document.getElementById("successMessage");
+const submitBtn = document.getElementById("submitBtn");
+
+form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    submitBtn.innerText = "Sending...";
+    submitBtn.disabled = true;
+
+    const formData = new FormData(form);
+
+    try {
+        const response = await fetch("https://formsubmit.co/ajax/kirangowdag278@gmail.com", {
+            method: "POST",
+            body: formData
+        });
+
+        if (response.ok) {
+            successMessage.classList.remove("opacity-0");
+            form.reset();
+            // Hide after 5 seconds
+            setTimeout(() => {
+                successMessage.classList.add("opacity-0");
+            }, 5000);
+        } else {
+            alert("Something went wrong. Please try again.");
+        }
+    } catch (error) {
+        alert("Error submitting form.");
+    }
+
+    submitBtn.innerText = "Send Message";
+    submitBtn.disabled = false;
+});
