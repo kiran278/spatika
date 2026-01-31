@@ -73,7 +73,7 @@ form.addEventListener("submit", async function (e) {
     const formData = new FormData(form);
 
     try {
-        const response = await fetch("https://formsubmit.co/ajax/kirangowdag278@gmail.com", {
+        const response = await fetch("https://formsubmit.co/ajax/jagadish@spatikahr.com", {
             method: "POST",
             body: formData
         });
